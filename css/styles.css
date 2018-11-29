@@ -1,0 +1,335 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Stoke", sans-serif;
+		color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, span {
+	font-family: "Vidaloka", sans-serif;
+	font-weight: 800;
+	color: black;
+  letter-spacing: 2px;
+}
+
+p {
+	color: black;
+}
+
+
+/* =================================
+ Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.title {
+  font-size: 2.25em;
+  padding-top: 15px;
+}
+
+.main-nav {
+  margin-top: 20px;
+}
+
+.title a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+  color: black;
+}
+
+.main-nav a {
+  font-size: 1.35em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: cornflowerblue;
+}
+
+.footer-nav a:hover {
+  color: cornflowerblue;
+}
+
+.footer-top a:hover {
+  color: cornflowerblue;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.intro {
+  background:linear-gradient(0deg,cornflowerblue, transparent);
+  text-align: center;
+}
+
+.profile-img {
+  width: 80%;
+  margin: 1em 1em;
+
+}
+
+.prof-state {
+  line-height: 1.6em;
+  font-size: 1.2em;
+  color: black;
+  margin-top: 20px;
+  padding-bottom: 55px;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.project-img {
+  width: 100%;
+}
+
+img.project-img:hover{
+  transform: scale(1.2);
+}
+
+.project-titles {
+  text-align: center;
+  font-size: 1.4em;
+  padding: 30px 0;
+	color: black;
+}
+
+.one  {
+  color: deepskyblue;
+}
+.two {
+  color: goldenrod;
+}
+
+.three {
+  color: steelblue;
+}
+
+.four {
+  color: lightseagreen;
+}
+
+.five {
+  color: darkslateblue;
+}
+
+.six {
+  color: slategrey;
+}
+
+.project-paragraphs {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  padding-bottom: 40px;
+}
+
+.skills p{
+  text-align: center;
+  margin: 30px 0;
+  color: cornflowerblue;
+  font-size: 2em;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 10px;
+	border-bottom: 1px cornflowerblue solid;
+	width: 40%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.main-footer {
+  background: linear-gradient(180deg,cornflowerblue, transparent);;
+  padding: 30px 0;
+}
+
+.footer-title,
+.footer-paragraph,
+.phone,
+.email {
+  text-align: center;
+	color: black;
+}
+
+.footer-title {
+  padding: 30px 0;
+}
+
+.footer-paragraph,
+.phone,
+.email {
+  line-height: 1.4em;
+  font-size: 1.1em;
+  color: black;
+}
+
+.footer-paragraph {
+  padding-bottom: 30px;
+}
+
+.phone {
+  padding-bottom: 15px;
+}
+
+.email {
+  padding-bottom: 35px;
+}
+
+.phone span,
+.email span {
+  font-weight: bold;
+}
+
+.footer-name,
+.footer-top {
+  margin: 30px 0;
+}
+
+.footer-name a,
+.footer-top a {
+  color: black;
+}
+
+.footer-name {
+  float: left;
+}
+
+.footer-top {
+  float: right;
+}
+
+.footer-nav li {
+  display: none;
+}
+
+.footer-nav li a {
+  color: black;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+
+  .intro {
+    padding-bottom: 50px;
+  }
+
+  .main-nav {
+    text-align: center;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .profile-img {
+    float: right;
+    width: 40%;
+  }
+
+  .prof-state {
+    float: left;
+    text-align: left;
+    width: 55%;
+    font-size: 1.2em;
+  }
+
+  .col {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .footer-paragraph {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .footer-nav {
+    float: right;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 0 20px;
+    font-weight: bold;
+  }
+  .footer-top {
+    display: none;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .title {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .prof-state {
+    width: 55%;
+    font-size: 1.4em;
+  }
+
+  .col {
+    width: 33%;
+    padding: 10px;
+  }
+
+  .footer-paragraph {
+    width: 50%;
+  }
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
